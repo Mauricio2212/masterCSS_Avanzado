@@ -18,6 +18,12 @@
     - .bloque
     - .bloque__elemento
     - .bloque__elemento--modificador
+
+  ¿Qué propone la metodología BEM?
+    - No usar ID's
+    - No usar etiquetas
+    - Que todo sea un key selector (seleccionar el elemento al que se le
+    asignaran los estilos)
 */
 
 /*------------- EJEMPLO 1 ----------------*/
@@ -43,9 +49,46 @@
     font-weight: bold;
 }
 
-.cards .card a {
+/*Contexto*/ /*key selector*/
+.cards .card  a {
     padding: 10px;
     background-color: green;
     color: white;
     text-decoration: none;
+}
+
+/*------------- EJEMPLO con BEM --------------*/
+
+.cardsBEM{
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 5px;
+}
+
+.cardsBEM__card{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*Clave / key selector*/
+.card__link{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
+
+.card__link--rojo{
+    background-color: red;
+    color: black;
 }
