@@ -1,0 +1,51 @@
+/*Metodología BEM
+  - Por sus siglas BEM significa:
+    - Bloque
+    - Elemento 
+    - Modificador
+
+  Es una forma que nos permite escribir los selectores CSS de forma mas rapida
+  y evitando repetir código para tener que acceder a un selector en concreto.
+
+  Esto nos ayudará mantener un código mas limpio y sin necesidad de escribir
+  tanto codigo.
+
+  Es una metodología en dónde se suele utilizar:
+    - class = aplicar estilos
+    - id = aplicar funcionalidad (javascript)
+
+  Las clases en BEM se pueden nombrar de la siguiente forma:
+    - .bloque
+    - .bloque__elemento
+    - .bloque__elemento--modificador
+*/
+
+/*------------- EJEMPLO 1 ----------------*/
+
+.cards{
+    width: 400px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 20px gray;
+    border-radius: 5px;
+}
+
+.cards .card{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    margin: 5px;
+    background-color: lightblue;
+}
+
+.cards .card h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards .card a {
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}
