@@ -1,0 +1,42 @@
+/*Unidades de medida relativas
+    La unidad de medida em: Utiliza la propiedad font-size: como elemento padre
+    La unidad e medida rem: Por defecto mide 16px, pero se puede modificar con la propiedad
+    font-size.
+*/
+
+html{
+    font-size: 13px; /*Aquí el font-size: es de 13px por lo que es igual a 1em*/
+}
+
+.caja{
+    font-size: 2em; 
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.caja2{
+    font-size: 2rem;
+    width: 50%;
+    height: 20rem;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.caja3{
+    font-size: 2em; /*2em = 26px, en esta caja ahora 1em equivale a 26px*/
+    width: 10em; /*Como ahora 1em = 26px, se declara un ancho de 260px*/
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
